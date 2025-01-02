@@ -48,21 +48,40 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
   - TSMixup and KernelSynth for data augmentation.
   - Use of language modeling techniques for forecasting.
  
-### **InstructTime: Advancing Time Series Classification with Multimodal Language Modeling (WSDM2025)**
-- **Authors**: Mingyue Cheng, Yiheng Chen, Qi Liu, Zhiding Liu, Yucong Luo
-- **Abstract**: This paper introduces **InstructTime**, a novel framework for time series classification by reformulating it as a multimodal learning task. The model leverages pre-trained language models to handle task-specific instructions and raw time series data simultaneously. Key components include a time series discretization module, an alignment projection layer, and autoregressive pre-training to boost transferability and generalization. Extensive experiments show superior performance on benchmark datasets.
+### **[Timer: Generative Pre-trained Transformers Are Large Time Series Models](https://arxiv.org/abs/2402.02368)**
+- **Authors**: Yong Liu, Haoran Zhang, Chenyu Li, Xiangdong Huang, Jianmin Wang, Mingsheng Long
+- **Abstract**: This paper introduces **Timer**, a generative pre-trained transformer designed as a large-scale time series model (LTSM). Timer unifies heterogeneous time series into a single-series sequence (S3) format, leveraging large-scale datasets with up to 1 billion time points for pre-training. The model converts various time series tasks—forecasting, imputation, and anomaly detection—into a unified generative task. Timer demonstrates promising capabilities across multiple downstream tasks, advancing the development of LTSMs.
 - **Key Contributions**:
-  - Reformulates time series classification as a learning-to-generate paradigm.
-  - Addresses modality representation gaps using alignment projection.
-  - Highlights the necessity of autoregressive pre-training for cross-domain tasks.
+  - Develops a unified S3 format to standardize time series data representation.
+  - Utilizes large-scale pre-training to improve task generality and scalability.
+  - Demonstrates effectiveness in forecasting, imputation, and anomaly detection.
+    
 
-### **CrossTimeNet: Cross-Domain Pre-training with Language Models for Transferable Time Series Representations (WSDM2025)**
-- **Authors**: Mingyue Cheng, Xiaoyu Tao, Qi Liu, Hao Zhang, Yiheng Chen, Defu Lian
-- **Abstract**: This paper presents **CrossTimeNet**, a cross-domain self-supervised learning (SSL) framework for time series data. By using a novel time series tokenization module, the model transforms raw time series into discrete tokens optimized through reconstruction. CrossTimeNet demonstrates the ability to transfer knowledge across domains and tasks effectively, showing superior performance in real-world classification scenarios.
+### **[TimeGPT-1](https://arxiv.org/abs/2310.03589)**
+- **Authors**: Azul Garza, Cristian Challu, Max Mergenthaler-Canseco
+- **Abstract**: This paper introduces **TimeGPT**, the first foundational model for time series, capable of generating accurate predictions for datasets not seen during training. TimeGPT excels in zero-shot inference, combining statistical, machine learning, and deep learning methods. The model highlights the utility of large-scale time series models, reducing uncertainty and democratizing access to precise predictions.
 - **Key Contributions**:
-  - Introduces time series tokenization for cross-domain SSL.
-  - Leverages pre-trained language models (PLMs) for initialization.
-  - Empirically validates its transferability across diverse domains.
+  - Establishes the first foundation model specifically for time series tasks.
+  - Achieves state-of-the-art zero-shot inference performance.
+  - Combines insights from multiple domains to enhance generalization.
+
+
+### **[Advancing Time Series Classification with Multimodal Language Modeling](https://arxiv.org/abs/2403.12371)**
+- **Authors**: Mingyue Cheng, Yiheng Chen, Qi Liu, Zhiding Liu, Yucong Luo
+- **Abstract**: This paper introduces **InstructTime**, a novel framework that reformulates time series classification as a multimodal learning-to-generate task. It utilizes pre-trained language models to process both task-specific instructions and raw time series as inputs, addressing challenges in transferability and modality representation. Key designs include a time series discretization module, an alignment projection layer, and autoregressive pre-training to enhance cross-domain generalization.
+- **Key Contributions**:
+  - Introduces a multimodal framework for time series classification.
+  - Employs alignment projection layers to address modality gaps.
+  - Highlights autoregressive pre-training for cross-domain transferability.
+
+
+### **[Cross-Domain Pre-training with Language Models for Transferable Time Series Representations](https://arxiv.org/abs/2403.12372)**
+- **Authors**: Mingyue Cheng, Xiaoyu Tao, Qi Liu, Hao Zhang, Yiheng Chen, Defu Lian
+- **Abstract**: This work proposes **CrossTimeNet**, a cross-domain self-supervised learning (SSL) framework designed to improve time series transferability. The model leverages a novel time series tokenization module to convert raw time series into discrete tokens optimized via reconstruction tasks. CrossTimeNet demonstrates its effectiveness in transferring knowledge across domains and boosting performance on downstream tasks.
+- **Key Contributions**:
+  - Develops a new tokenization module for cross-domain time series learning.
+  - Utilizes pre-trained language models (PLMs) for initialization.
+  - Validates performance through extensive real-world experiments.
  
   
 ---
