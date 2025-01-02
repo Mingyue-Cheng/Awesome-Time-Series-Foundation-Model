@@ -15,10 +15,8 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
 
 ## 📄 Table of Contents
 
-- [Universal Forecasting Transformers](#universal-forecasting-transformers)
-- [Pre-training for Time Series Models](#pre-training-for-time-series-models)
+- [Universal Time Series Models](#universal-forecasting-transformers)
 - [Benchmarks and Datasets](#benchmarks-and-datasets)
-- [Related Research](#related-research)
 - [Contributing](#contributing)
 
 ---
@@ -42,9 +40,6 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
   - Patch-based input/output design for flexible predictions.
   - Pre-trained on large-scale real-world and synthetic data.
 
----
-
-## 🎓 Pre-training for Time Series Models
 
 ### **[Chronos: Learning the Language of Time Series](https://arxiv.org/abs/2310.01728)**
 - **Authors**: N. Gruver, M. Finzi, et al.
@@ -52,7 +47,8 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
 - **Key Contributions**:
   - TSMixup and KernelSynth for data augmentation.
   - Use of language modeling techniques for forecasting.
-
+ 
+  
 ---
 
 ## 📊 Benchmarks and Datasets
@@ -68,15 +64,7 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
 - **Description**: A collection of real-world time series datasets across diverse domains.
 - **Link**: [Monash Archive](https://forecastingdata.org/)
 
----
-
-## 📖 Related Research
-
-- **[N-BEATS: Neural Basis Expansion Analysis for Time Series Forecasting](https://arxiv.org/abs/1905.10437)**
-  - The foundation for interpretable time series models.
-
-- **[Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting](https://arxiv.org/abs/2106.13008)**
-  - A pioneering work in leveraging transformers for long-term forecasting.
+XXXXXXX
 
 ---
 
