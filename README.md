@@ -48,6 +48,22 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
   - TSMixup and KernelSynth for data augmentation.
   - Use of language modeling techniques for forecasting.
  
+### **InstructTime: Advancing Time Series Classification with Multimodal Language Modeling (WSDM2025)**
+- **Authors**: Mingyue Cheng, Yiheng Chen, Qi Liu, Zhiding Liu, Yucong Luo
+- **Abstract**: This paper introduces **InstructTime**, a novel framework for time series classification by reformulating it as a multimodal learning task. The model leverages pre-trained language models to handle task-specific instructions and raw time series data simultaneously. Key components include a time series discretization module, an alignment projection layer, and autoregressive pre-training to boost transferability and generalization. Extensive experiments show superior performance on benchmark datasets.
+- **Key Contributions**:
+  - Reformulates time series classification as a learning-to-generate paradigm.
+  - Addresses modality representation gaps using alignment projection.
+  - Highlights the necessity of autoregressive pre-training for cross-domain tasks.
+
+### **Cross-Domain Pre-training with Language Models for Transferable Time Series Representations (WSDM2025)**
+- **Authors**: Mingyue Cheng, Xiaoyu Tao, Qi Liu, Hao Zhang, Yiheng Chen, Defu Lian
+- **Abstract**: This paper presents **CrossTimeNet**, a cross-domain self-supervised learning (SSL) framework for time series data. By using a novel time series tokenization module, the model transforms raw time series into discrete tokens optimized through reconstruction. CrossTimeNet demonstrates the ability to transfer knowledge across domains and tasks effectively, showing superior performance in real-world classification scenarios.
+- **Key Contributions**:
+  - Introduces time series tokenization for cross-domain SSL.
+  - Leverages pre-trained language models (PLMs) for initialization.
+  - Empirically validates its transferability across diverse domains.
+ 
   
 ---
 
