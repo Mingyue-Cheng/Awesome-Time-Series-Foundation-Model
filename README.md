@@ -56,7 +56,7 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
   - Addresses modality representation gaps using alignment projection.
   - Highlights the necessity of autoregressive pre-training for cross-domain tasks.
 
-### **Cross-Domain Pre-training with Language Models for Transferable Time Series Representations (WSDM2025)**
+### **CrossTimeNet: Cross-Domain Pre-training with Language Models for Transferable Time Series Representations (WSDM2025)**
 - **Authors**: Mingyue Cheng, Xiaoyu Tao, Qi Liu, Hao Zhang, Yiheng Chen, Defu Lian
 - **Abstract**: This paper presents **CrossTimeNet**, a cross-domain self-supervised learning (SSL) framework for time series data. By using a novel time series tokenization module, the model transforms raw time series into discrete tokens optimized through reconstruction. CrossTimeNet demonstrates the ability to transfer knowledge across domains and tasks effectively, showing superior performance in real-world classification scenarios.
 - **Key Contributions**:
