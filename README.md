@@ -95,11 +95,86 @@ A curated list of foundational papers on **Time Series Foundation Models**, incl
   - Multiple frequencies and domains.
   - Unified storage format using Apache Arrow.
 
-### **Monash Time Series Forecasting Archive**
-- **Description**: A collection of real-world time series datasets across diverse domains.
-- **Link**: [Monash Archive](https://forecastingdata.org/)
+## **Monash Time Series Forecasting Archive**
 
-XXXXXXX
+- **Description**  
+  The Monash Time Series Forecasting Archive provides a comprehensive collection of real-world time series datasets. Covering domains such as finance, tourism, healthcare, and more, it features a range of frequencies (annual, monthly, weekly, daily, sub-daily) and an extensive variety of time series lengths. By unifying multiple benchmark datasets into a single repository, the archive enables transparent and reproducible forecasting research.
+
+- **Purpose**  
+  Designed to facilitate rigorous evaluation and benchmarking, the Monash Archive offers researchers and practitioners a **standardized** environment to **develop, compare, and refine** forecasting models. Its wide coverage of frequencies and domains helps assess model robustness and generalization.
+
+- **Key Features**  
+  - **Diverse Domains**: Finance, economics, energy, tourism, and more, reflecting real-world forecasting challenges.  
+  - **Multiple Frequencies**: Annual, monthly, weekly, daily, and sub-daily observations for different forecast horizons.  
+  - **Rich Benchmarking Environment**: Aggregates well-known datasets (e.g., M1, M3, M4, tourism) under a consistent format, streamlining model comparison.  
+  - **Open Access & Reproducibility**: Publicly available with standardized metadata and documentation, ensuring transparent experimentation.  
+  - **Community-Driven Updates**: Continually expanded with new datasets and usage examples contributed by the forecasting community.
+
+> **More Information**  
+> - **Official Website**: [https://forecastingdata.org/](https://forecastingdata.org/)  
+> - **Reference Paper**: [Hyndman et al., 2021](https://robjhyndman.com/papers/Monash_Forecasting_Archive.pdf)  
+
+
+### **GIFT-Eval: A Benchmark for General Time Series Forecasting Model Evaluation**
+
+- **Description**  
+  Spanning 23 datasets, over 144,000 time series, and 177 million data points, GIFT-Eval covers 7 domains and 10 frequencies, ranging from short- to long-term forecasts. Additionally, it provides a non-leaking pretraining dataset of approximately 230 billion data points, specifically designed for large-scale foundation models in time series.
+
+- **Purpose**  
+  Designed to evaluate deep learning, statistical, and foundation models under a **unified and diverse** setting, aiming to assess their **zero-shot** forecasting capabilities and generalization performance.
+
+- **Key Features**  
+  - **Extensive Data Coverage**: Encompasses 7 domains (e.g., finance, energy, traffic) with various time frequencies and multivariate input structures.  
+  - **Comprehensive Benchmarks**: Includes **17 baselines** (statistical, deep learning, and foundation models) for performance comparisons across different algorithmic paradigms.  
+  - **Non-Leaking Pretraining Data**: Around **230 billion** data points, enabling fair and large-scale model pretraining.  
+  - **Open-Source Code & Leaderboard**: Facilitates reproducibility and competitive benchmarking.  
+  - **Multi-Task Evaluation**: Covers short-, medium-, and long-term forecast horizons, evaluating models in **zero-shot** scenarios for both univariate and multivariate tasks.
+
+> **More Information**  
+> - **Paper**: [arXiv:2410.10932](https://arxiv.org/abs/2410.10932)  
+> - **Project**: [https://github.com/SalesforceAIResearch/gift-eval](https://github.com/SalesforceAIResearch/gift-eval)
+
+### **Context is Key (CiK): A Benchmark for Forecasting with Essential Textual Information**
+
+- **Description**  
+  “Context is Key” (CiK) provides a novel time series forecasting benchmark that pairs numerical data with **carefully crafted textual context**. By requiring models to integrate **multiple modalities**—including structured time series and unstructured natural language—CiK addresses the gap where traditional forecasting often ignores **human-generated** background knowledge or constraints. 
+
+- **Purpose**  
+  CiK aims to evaluate how effectively statistical models, foundation models, and especially **LLM-based** forecasters can incorporate contextual information to produce **more accurate** and **context-aware** predictions. It emphasizes the **textual nuances** that human forecasters often rely upon but which many models overlook.
+
+- **Key Features**  
+  - **Multimodal Data**: Combines **time series** with **diverse textual context** to capture real-world forecasting scenarios where domain knowledge and constraints are crucial.  
+  - **Wide Range of Methods**: Benchmarks **statistical**, **time series foundation**, and **LLM-based** models, offering a comprehensive view of how different paradigms handle context.  
+  - **Simple Yet Effective Prompting**: Introduces a **prompt-based** approach that notably boosts forecasting performance, highlighting **LLMs’ capability** to leverage additional textual cues.  
+  - **Critical Insights**: Uncovers **strengths** and **limitations** of LLM-based forecasting methods, guiding future research in **multimodal forecasting**.  
+  - **Accessible Visualizations**: The benchmark can be visualized at [this link](https://arxiv.org/abs/2410.18959), facilitating a clearer understanding of **context integration**.
+
+> **More Information**  
+> - **Paper**: [arXiv:2410.18959](https://arxiv.org/abs/2410.18959)  
+> - **Authors**: Andrew Robert Williams, Arjun Ashok, Étienne Marcotte, Valentina Zanetdeschi, Jithendaraa Subramanian, Roland Riachi, James Requeima, Alexandre Lacoste, Irina Rish, Nicolas Chapados, Alexandre Drouin  
+> - **Submission**: 24 Oct 2024  
+> - **Comments**: Preprint; first two authors contributed equally
+
+## **Time-MMD: Multi-Domain Multimodal Dataset for Time Series Analysis**
+
+- **Description**  
+  Time-MMD is the first **multi-domain, multimodal time series dataset**, spanning 9 primary data domains. It ensures **fine-grained modality alignment**, eliminates data contamination, and provides **high usability** for real-world time series analysis (TSA). This benchmark is designed to integrate numerical series data with **domain-specific textual knowledge**, unlocking the untapped potential of textual data in enhancing forecasting tasks.
+
+- **Purpose**  
+  Time-MMD addresses the limitations of existing time series models that rely solely on numerical data. By seamlessly combining numerical and textual modalities, it enables **in-depth multimodal evaluations** and promotes advancements in multimodal TSA models. Additionally, the accompanying library **MM-TSFLib** facilitates the seamless use of the dataset for benchmarking and model development.
+
+- **Key Features**  
+  - **Multi-Domain Coverage**: Includes 9 domains with diverse real-world applications, ensuring broad utility.  
+  - **Multimodal Alignment**: Provides structured numerical data alongside rich textual context, enabling models to leverage domain-specific knowledge.  
+  - **Benchmarking Library**: Features **MM-TSFLib**, the first multimodal time series forecasting library for streamlined analysis.  
+  - **Significant Performance Gains**: Demonstrates up to **15% error reduction** on average and up to **40% reduction** in domains rich with textual data when transitioning from unimodal to multimodal approaches.  
+  - **Open Access Resources**: The dataset and library are publicly available to revolutionize TSA applications and research.
+
+> **More Information**  
+> - **Paper**: [arXiv:2406.08627](https://arxiv.org/abs/2406.08627)  
+> - **Authors**: Haoxin Liu, Shangqing Xu, Zhiyuan Zhao, Lingkai Kong, Harshavardhan Kamarthi, Aditya B. Sasanur, Megha Sharma, Jiaming Cui, Qingsong Wen, Chao Zhang, B. Aditya Prakash  
+
+
 
 ---
 
